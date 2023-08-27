@@ -10,9 +10,40 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 10px 25px; /* added */
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+/* added */
+input {
+  width: 255px;
+  margin-bottom: 10px;
+}
+
+.timer {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+}
+
+.field {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.label {
+  width: 70px;
+  display: flex;
+  justify-content: center;
 }
