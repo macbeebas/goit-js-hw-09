@@ -26,7 +26,7 @@ function addLeadingZero(value) {
 }
 
 function resetSecTS(ts) {
-  d = 60000;
+  let d = 60000;
   return Math.floor(ts / d) * d;
 }
 
