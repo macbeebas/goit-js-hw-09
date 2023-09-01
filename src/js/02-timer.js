@@ -85,6 +85,5 @@ startBtn.addEventListener('click', () => {
       clearInterval(timerId);
       timerId = null;
     } else COUNTER = COUNTER - 1000;
-    console.log(COUNTER);
   }, 1000);
 });
