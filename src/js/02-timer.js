@@ -42,18 +42,21 @@ const options = {
 
 const startBtn = document.querySelector('[data-start]');
 const inputItem = document.querySelector('#datetime-picker');
-
 const daysElem = document.querySelector('[data-days]');
 const hoursElem = document.querySelector('[data-hours]');
 const minutesElem = document.querySelector('[data-minutes]');
 const secondsElem = document.querySelector('[data-seconds]');
 
-startBtn.disabled = 1;
-
 const flatPicker = flatpickr(inputItem, options);
 const initDate = flatPicker.selectedDates;
+
 let selectedDate = initDate;
+
+let timerId = null;
 let COUNTER;
+
+startBtn.disabled = 1;
+
 const initDateObj = { TimeStamp: resetSecTS(initDate[0].getTime()) };
 
 const selectedDateObj = _.cloneDeep(initDateObj);
